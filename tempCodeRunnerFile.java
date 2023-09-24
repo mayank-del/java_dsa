@@ -1,0 +1,2 @@
+tempSum=diff;
+                    sum=tempSum;
