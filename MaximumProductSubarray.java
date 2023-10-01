@@ -40,5 +40,19 @@ class Solution {
         }
         max=Math.max(max,arr[n-1]);
         return max;
+
+-----------> Best Solution (Two Pointers)  <-----------------
+    /*  long left=1,right=1,maxm=Integer.MIN_VALUE;
+        
+        for(int i=0;i<n;i++){
+            if(left==0) left=1;
+            if(right==0) right=1;
+            
+            left*=arr[i];
+            right*=arr[n-i-1];
+            
+            maxm=Math.max(maxm,Math.max(left,right));
+        }
+        return maxm;*/
     }
 }

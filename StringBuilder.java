@@ -17,3 +17,14 @@
         //removing substring from 5 to 9
         sb.delete(5,9);
         System.out.println(sb);
+
+        String mainString = "Hello, world!";
+        String subString = "world";
+        
+        int index = mainString.indexOf(subString);
+
+        // lexicographical order comaprison
+        //name is smaller in comparison to names[0] name will come before in lexicographical order
+        if(name.compareTo(names[0])<0){
+                    names[0]=name;
+                }

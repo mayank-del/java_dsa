@@ -50,6 +50,9 @@ class Solution{
             }
             max=Math.max(max,sum);
         }
+        // for few test cases have only negative value , 
+        // in them any number that is less negative 
+        // will be the answer .
         
         if(max==0){
             max=Integer.MIN_VALUE;

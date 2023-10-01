@@ -46,9 +46,9 @@ class Solution {
         for(int i=0;i<n;i++){
             if(x-arr[i] !=arr[i] && h.containsKey(x-arr[i])){
                 return true;
-            }else if(x-arr[i] ==arr[i] && h.containsKey(x-arr[i]) && (arr[i])*h.get(arr[i])==x){
+            }else if(x-arr[i] == arr[i] && h.containsKey(x-arr[i]) && (arr[i])*h.get(arr[i])==x){
                 return true;
-            }else if(x-arr[i] ==arr[i] && h.containsKey(x-arr[i]) && (arr[i])*h.get(arr[i])!=x){
+            }else if(x-arr[i] == arr[i] && h.containsKey(x-arr[i]) && (arr[i])*h.get(arr[i])!=x){
                 break;
             }else {
                 continue;
