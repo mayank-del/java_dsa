@@ -45,8 +45,6 @@ class Solution
         Queue<Integer> q = new LinkedList<>();
         //ArrayList<Integer> res = new ArrayList<>();
    // ArrayList<ArrayList<Integer>> arr = new ArrayList<>();
-
-    
     
     boolean vis[] = new boolean[V];
 
