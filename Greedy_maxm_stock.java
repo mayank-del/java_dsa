@@ -64,3 +64,33 @@ class Solution {
     }
 }
         
+//o(n)
+
+public static int buyMaximumProducts(int n, int k, int[] price) {
+        // code here
+        Pair[] p=new Pair[n];
+        for(int i=0;i<price.length;i++){
+            p[i]=new Pair(price[i],i+1);
+        }
+        
+        Arrays.sort(p,(a,b)->a.data-b.data);
+        int count=0;
+        
+        for(int i=0;i<p.length;i++){
+            /*for(int j=0;j<p[i].maxm_limit;j++){
+                if(p[i].data<=k){
+                    
+                }
+            }*/
+            if(p[i].data*p[i].maxm_limit<k){
+                k-=p[i].data*p[i].maxm_limit;
+                count+=p[i].maxm_limit;
+            }else{
+                int quotient=k/p[i].data;
+                k-=quotient*p[i].data;
+                count+=quotient;
+            }
+        }
+        
+        return count;
+    }
