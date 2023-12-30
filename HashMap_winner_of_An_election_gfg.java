@@ -63,3 +63,51 @@ class Solution
     }
 }
 
+
+/* 
+class Pair{
+    String name;
+    int votes;
+    
+    
+    Pair(String name, int votes){
+        this.name=name;
+        this.votes=votes;
+    }
+    
+}
+
+class Solution
+{
+    //Function to return the name of candidate that received maximum votes.
+    public static String[] winner(String arr[], int n)
+    {
+        // add your code
+        /*HashMap<String ,Integer>h=new HashMap<>();
+        
+        for(String s:arr){
+            h.put(s,h.getOrDefault(s,0)+1);
+        }
+        Pair p[]=new Pair[h.size()];
+        int i=0;
+        for(String s:h.keySet()){
+            p[i++]=new Pair(s,h.get(s));
+        }
+        Arrays.sort(p,(a,b)->{
+            if(a.votes>b.votes){
+                return -1;
+            }else if(a.votes==b.votes){
+                return a.name.compareTo(b.name); 
+            }else {
+                return 1;
+            }
+        });
+        return new String[]{p[0].name, p[0].votes+""};
+        }
+        }
+        
+        */
+
+
+ */
+
