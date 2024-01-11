@@ -41,7 +41,7 @@ class Solution {
         Arrays.sort(A);
         Arrays.sort(B);
 
-        PriorityQueue<Integer>pq = new PriorityQueue<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
         
         List<Integer> result = new ArrayList<>();
         
