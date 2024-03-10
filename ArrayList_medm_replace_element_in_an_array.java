@@ -6,9 +6,9 @@ class Solution {
         }
         for(int i=0;i<oper.length;i++){
             int ind=arr.indexOf(oper[i][0]);
-            arr.remove(ind);
-            arr.add(ind,oper[i][1]);
-            //arr.set(ind,oper[i][1]);
+            /* arr.remove(ind);
+            arr.add(ind,oper[i][1]); */
+            arr.set(ind,oper[i][1]);
         }
         nums=new int[arr.size()];
         int i=0;
