@@ -5,11 +5,11 @@ class HelloWorld {
     
     public static void main(String[] args) {
         String str="online java compiler";
-    HashMap<Character, Integer> h=new HashMap<>();
-    char c[]=str.toCharArray();
-    for(Character ch:c){
-        h.put(ch,h.getOrDefault(ch,0)+1);
-    }
+        HashMap<Character, Integer> h=new HashMap<>();
+        char c[]=str.toCharArray();
+        for(Character ch:c){
+            h.put(ch,h.getOrDefault(ch,0)+1);
+        }
     int cnt=0;
     String res="";
     for(Character ch:h.keySet()){
