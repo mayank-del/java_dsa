@@ -8,7 +8,7 @@ public class ArrayLists_basic {
          * ArrayList<String> s= new ArrayList<String>()
          * 
         */
-
+       //ArrayList<Integer> arr=new ArrayList<>(Arrays.asList(101.89757,21.879759,101.8975,101.8976,101.89,32,54,2,64,2,6,4));
         /* Boolean ArrayList
          * ArrayList<Boolean> b=new ArrayList<>()
          */
