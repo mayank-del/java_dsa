@@ -24,3 +24,101 @@ public class CyclicSort {
         arr[b]=temp;    
     }
 }
+
+class Marvel{
+    int id;
+    String name;
+    double budget;
+    double boxOffice;
+    int rating;
+
+    public Marvel(int id, String name, double budget, double boxOffice, int rating) {
+        this.id = id;
+        this.name = name;
+        this.budget = budget;
+        this.boxOffice = boxOffice;
+        this.rating = rating;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getBudget() {
+        return this.budget;
+    }
+
+    public void setBudget(double budget) {
+        this.budget = budget;
+    }
+
+    public double getBoxOffice() {
+        return this.boxOffice;
+    }
+
+    public void setBoxOffice(double boxOffice) {
+        this.boxOffice = boxOffice;
+    }
+
+    public int getRating() {
+        return this.rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+}
+
+public static  double avg(ArrayList<Marvel> arr,double budg){
+    int res=0.0;
+    int sum=0;
+    int cnt=0;
+    for(Marvel m:arr){
+        if(m.getBudget()>budg){
+            sum+=m.getRating
+            cnt++;
+        }
+    }
+    if(sum>0){
+        res=(double)sum/cnt;
+    }
+    return res;
+} 
+
+public static ArrayList<Marvel> search(ArrayList<Marvel> arr,double box){
+    ArrayList<Marvel> res = new ArrayList<>();
+        
+        for (Marvel m : mr) {
+            if (m.getBoxOffice() < box) {
+                res.add(m);
+            }
+        }
+
+        if (res.size() > 0) {
+            
+            Collections.sort(res, new Comparator<Marvel>() {
+                
+                public int compare(Marvel a, Marvel b) {
+                   
+                    return b.getId() - a.getId();
+                }
+            });
+            
+            return res;
+        } else {
+            return null;
+        }
+}
