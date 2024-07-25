@@ -1,5 +1,5 @@
 import java.util.*;
-public class Stack_rev_subs {
+public class Stack_rev_substrings_between_each_pair_of_parentheses {
     public static void main(String[] args) {
             String s="(a(bcdefghijkl(mno)p)q)";
             Stack<String> st=new Stack<>();
