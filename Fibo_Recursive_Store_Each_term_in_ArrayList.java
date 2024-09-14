@@ -27,3 +27,24 @@ class HelloWorld {
         
     }
 }
+
+/* 
+ * This means that dog is a reference variable of type Animal, but it is actually referring to an object of type Dog.
+ * 
+ */
+
+ /* 
+  * 
+  JDK
+The Java Development Kit is a development environment for building Java applications, applets, and components. 
+It includes tools for developing, testing, and debugging Java programs. 
+
+JRE
+The Java Runtime Environment is a software layer that provides the resources needed for Java programs to run. 
+It includes the Java Virtual Machine (JVM), class libraries, and other supporting files. 
+
+JVM
+The Java Virtual Machine is the foundation of the Java programming language. It allows Java programs to run on any device or
+operating system, and manages and optimizes program memory. 
+
+  */
