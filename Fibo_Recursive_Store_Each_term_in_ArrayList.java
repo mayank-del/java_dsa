@@ -46,5 +46,6 @@ It includes the Java Virtual Machine (JVM), class libraries, and other supportin
 JVM
 The Java Virtual Machine is the foundation of the Java programming language. It allows Java programs to run on any device or
 operating system, and manages and optimizes program memory. 
+Jvm is am interpreter thst is responsible to run run java program line by line.
 
   */
