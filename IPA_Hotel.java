@@ -27,7 +27,7 @@ class Hotel{
 
 }
 
-class IPA_Hotel{
+class IPA_Hotel/*  implements A,B */{
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
             
@@ -63,6 +63,17 @@ class IPA_Hotel{
         return arr;
     }
 }
+
+/* interface A{
+    public default void disp(){
+        System.out.println("hemlo");
+    }
+}
+interface B{
+    public default void displ(){
+
+    }
+} */
 
 
 
