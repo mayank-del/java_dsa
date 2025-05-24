@@ -107,3 +107,69 @@ class Solution {
       }
     }
 }
+
+
+//Another solution, many days later
+
+
+/* 
+ * 
+ * class Solution {
+    public int countIslands(char[][] grid) {
+        // Code here
+        
+       Queue<Pair> q=new LinkedList<>();
+       int n=grid.length;
+       int m=grid[0].length;
+       boolean vis[][]=new boolean[n][m];
+       int cnt=0;
+       for(int i=0;i<n;i++){
+           for(int j=0;j<m;j++){
+               if(!vis[i][j] && grid[i][j]=='L'){
+                   cnt++;
+                   vis[i][j]=true;
+                   q.add(new Pair(i,j));
+                   bfs(grid,n,m,q,vis);
+               }
+           }
+       }
+       return cnt;
+       
+       
+    }
+    
+    public void bfs(char grid[][],int n, int m,Queue<Pair> q, boolean vis[][]){
+        
+        //int delCoord[][]=[]
+        while(!q.isEmpty()){
+            
+            Pair pr=q.remove();
+            int x=pr.x;
+            int y=pr.y;
+            
+            for(int i=-1;i<=1;i++){
+                for(int j=-1;j<=1;j++){
+                    int delx=x+i;
+                    int dely=y+j;
+                    
+                    if(delx>=0 && delx<n && dely>=0 && dely<m && !vis[delx][dely] &&grid[delx][dely]=='L'){
+                        q.add(new Pair(delx,dely));
+                        vis[delx][dely]=true;
+                    }
+                }
+            }
+        }
+    }
+}
+
+class Pair{
+    int x;
+    int y;
+    Pair(int x,int y){
+        this.x=x;
+        this.y=y;
+    }
+}
+ * 
+ * 
+ */
